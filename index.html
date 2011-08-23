@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+
+  <title>Qube-it/Rectangle-Tools-2010-2012 @ GitHub</title>
+
+  <style type="text/css">
+    body {
+      margin-top: 1.0em;
+      background-color: #24ff30;
+      font-family: Helvetica, Arial, FreeSans, san-serif;
+      color: #ffffff;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+    h1 { font-size: 3.8em; color: #db00cf; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #db00cf; }
+    h3 { text-align: center; color: #db00cf; }
+    a { color: #db00cf; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+    pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+  </style>
+</head>
+
+<body>
+  <a href="http://github.com/Qube-it/Rectangle-Tools-2010-2012"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+  <div id="container">
+
+    <div class="download">
+      <a href="http://github.com/Qube-it/Rectangle-Tools-2010-2012/zipball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/Qube-it/Rectangle-Tools-2010-2012/tarball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </div>
+
+    <h1><a href="http://github.com/Qube-it/Rectangle-Tools-2010-2012">Rectangle-Tools-2010-2012</a>
+      <span class="small">by <a href="http://github.com/Qube-it">Qube-it</a></span></h1>
+
+    <div class="description">
+      Add-in to Autodesk Inventor which provides a suite of symmetrical rectangle sketching tools.
+    </div>
+
+    <p>********************************
+INVENTOR PRODUCTIVITY TOOLS    
+____________________________
+
+Author:
+	QUBE-IT DESIGN, INC
+	Brian Hall
+	8/22/2010
+********************************
+
+DESCRIPTION
+_______________
+
+V3(Current)
+
+This tool set has four distinct rectangle drawing tools that are used inside the sketch
+environment for part files, assembly files, and drawing files.  They are located on a 
+separate ribbon panel called "Rectangles" on the "Sketch" ribbon tab. They are as follows:
+
+Center Point Rectangle (default displayed button):
+	This rectangle tool draws a rectangle about the origin of where the user picks.  It
+	constrains the rectangle by adding a vertical and horizontal alignment constraint to
+	one of the vertical and horizontal lines respectively as well as a coincident constraint
+	to the geometry that the user selects.  If no geometry is selected, then only the vertical
+	and horizontal alignment constraints will be used.
+Diagonal Center Point Rectangle:
+	This rectangle tool draws a rectangle about the origin of where the user picks and adds
+	a diagonal line that goes from one corner to the opposite corner with a sketch point constrained
+	to the mid-point of the diagonal line.  By virtue of the diagonal line, the rectangle relationship 
+	to the origin is maintained, but if the user selects existing geometry then a coincident
+	constraint is added to the origin sketch point and selected geometry.
+Horizontal Mid-Point Rectangle:
+	This rectangle tool draws a rectangle that eminates from the mid-point of one of the 
+	horizontal lines of the rectangle.  A sketch point is then added and constrained to 
+	that line's mid-point.  If the user selects existing geometry, then the sketch point
+	is constrained to the existing geometry accordingly.
+Vertical Mid-Point Rectangle:
+	This rectangle tool draws a rectangle that eminates from the mid-point of one of the 
+	vertical lines of the rectangle.  A sketch point is then added and constrained to 
+	that line's mid-point.  If the user selects existing geometry, then the sketch point
+	is constrained to the existing geometry accordingly.
+
+There is also the ability to configure the user interface for this add-in.  You may use the original
+drop-down control to access the commands or you may switch to a panel style layout.  To configure the
+user interface simply go to the application menu (the big "I" in the upper left corner of Inventor) and
+choose the "Rectangle Tools Settings" command and it will bring up a dialog box with two radio buttons
+which allow you to set the desired user interface for these commands. This will require a restart of 
+Inventor for the change to take effect.
+
+
+SOURCE CODE
+_________________
+
+This is an open source project.
+
+Source code was written in C# and is provided at https://github.com/Qube-it/Rectangle-Tools-2010-2012
+
+SUPPORTED VERSIONS
+______________________
+
+This add-in supports Inventor 2010 forward and does not support the classic
+interface. 
+
+
+INSTALLATION
+________________ 
+
+An installer wizard ("Qube-It Tools.msi") has been provided. Since this add-in was
+built using .NET 3.5 framework, you will need that framework to run the add-in.  The
+installer will automatically detect this and install it if you don't have it. Follow 
+the prompts for quick installation.  You can change the location of the install folder 
+if you like.
+
+You may uninstall the add-in through your system's control panel. You may also simply
+uncheck the "Load on Startup" box if you're only looking to unload it without uninstalling it.
+
+
+KNOWN ISSUES
+_________________
+
+This add-in does not support the classic interface by design. 
+
+The default rectangle button shown on the Rectangles tab is the Center point Rectangle.
+When the user selects one of the other rectangle tools, they will remain displayed
+and "pressed" during the life of the tool, but when the user exits the tool or starts another
+tool, the displayed button will go back to being the Center Point Rectangle tool again.  
+This is intentional because even if the other tools are displayed (i.e. horizontal or 
+vertical mid-point rectangle tools) and the user clicks that displayed button, the center point rectangle tool 
+will be what gets activated (unless the user selects the drop down first). 
+
+There is no support for the heads up display to be utilized with these tools. It is not 
+supported through the API yet.
+
+
+BUG FIXES
+__________________
+R2 fixes:
+			1) Added support for the construction line toggle.
+			2) Added the Diagonal Center Point Rectangle tool to provide for a more robust
+			   rectangle so that there are no unexpected results when the corners are filleted 
+			   or chamfered.
+			3) Changed the behavior of the tool so that it acts in a manner that is consistent with 
+			   the behavior of the current Inventor rectangle tools where the command stays 
+			   active until the user escapes out of the command or starts a new command.
+
+R3 fixes:
+			1) Added support for a keyboard shortcut to TERMINATE a running rectangle command
+			2) Added the ability for a user to configure the user interface.
+
+
+RELEASE HISTORY
+__________________
+
+R1 						7/4/2010
+R2 						7/11/2010
+R3 (current release)				8/22/2011
+
+
+FEEDBACK
+________________
+
+Brian@Qube-it.com
+or post online to  http://www.mcadforums.com/forums/posting.php?mode=edit&f=34&p=78891
+
+***************************************************************************************
+
+Permission to use, copy, modify, and distribute this software in
+object code form for any purpose and without fee is hereby granted, 
+provided that the above copyright notice appears in all copies and 
+that both that copyright notice and the limited warranty and
+restricted rights notice below appear in all supporting 
+documentation.  This add-in may be freely distributed and installed
+on all properly licensed installations of Autodesk Inventor.
+
+QUBE-IT DESIGN PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS. 
+QUBE-IT DESIGN SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  QUBE-IT DESIGN, INC. 
+DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+UNINTERRUPTED OR ERROR FREE.</p><h2>Dependencies</h2>
+<p>You'll need two dll's that I made separately from this project.  They each have an open source repository of their own under my user ID (Qube-it).  They are InventorDocumentProperties and InventorEvents2010.  You can download each of those projects, build them to create the dll files, and then re-add the reference by pointing to the built dll's.
+
+Of course you'll need the Autodesk.Inventor.Interop dll assembly as well, but that should be already on your system from your installation of Inventor.</p>
+<h2>Install</h2>
+<p>If you're just using the add-in and not interested in the source code, then uninstall the previous version of the rectangle tools before installing the latest version.
+
+The old version is under the name "Qube-it Tools" and can be uninstalled via the Add/Remove programs (or just "Programs") on Windows.
+
+The installer for this Add-in is located in the "Downloads" area.  It's an MSI file.</p>
+<h2>License</h2>
+<p>I'm not hip on all the GNU license jargon so I can't articulate a proper license model for the companies who really need it, but I will say this:
+
+This add-in is free and open source and extends any Autodesk licensing since it's built on top of Autodesk Inventor's API.   
+
+Permission to use, copy, modify, and distribute this software in
+object code form for any purpose and without fee is hereby granted, the limited warranty and
+restricted rights notice below appear in all supporting 
+documentation.  This add-in may be freely distributed and installed
+on all properly licensed installations of Autodesk Inventor.
+</p>
+<h2>Authors</h2>
+<p>Brian Hall (Brian@Qube-it.com)<br/><br/>      </p>
+<h2>Contact</h2>
+<p>Brian Hall (Brian@Qube-it.com)<br/>      </p>
+
+
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="http://github.com/Qube-it/Rectangle-Tools-2010-2012/zipball/master">zip</a> or
+      <a href="http://github.com/Qube-it/Rectangle-Tools-2010-2012/tarball/master">tar</a> formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/Qube-it/Rectangle-Tools-2010-2012</pre>
+    </p>
+
+    <div class="footer">
+      get the source code on GitHub : <a href="http://github.com/Qube-it/Rectangle-Tools-2010-2012">Qube-it/Rectangle-Tools-2010-2012</a>
+    </div>
+
+  </div>
+
+  
+</body>
+</html>
