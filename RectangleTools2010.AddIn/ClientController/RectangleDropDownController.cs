@@ -75,6 +75,8 @@ namespace QubeItTools.ClientController
             diagonalCenterPointRectangleButton = new DiagonalCenterPointRectangleButton();
 
             DefaultDisplayControl = centerPointRectangleBtn.ButtonDefinition;
+
+            //TODO: Testing 
         }
         #endregion
 
