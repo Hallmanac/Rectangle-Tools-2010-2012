@@ -6,25 +6,14 @@ ____________________________
 Author:
 	QUBE-IT DESIGN, INC
 	Brian Hall
-	7/4/2010
+	8/22/2010
 ********************************
 
 DESCRIPTION
 _______________
 
-R1
-This tool set is three distinct rectangle drawing tools that are used inside
-the sketch environment for part files, assembly files, and drawing files.  They are a 
-Center Point Rectangle, a Horizontal Mid-Point Rectangle, and a Vertical Mid-Point 
-Rectangle. The Horizontal and Vertical mid-point rectangles create a rectangle from
-the mid-points of one of the horizontal or vertical lines of the rectangle. The 
-Center Point Rectangle creates a rectangle about the origin of where the user picks.
-These tools are located on the sketch tab in the ribbon interface as a separate panel
-called "Rectangles". 
+V3(Current)
 
-==============================
-
-R2(Current)
 This tool set has four distinct rectangle drawing tools that are used inside the sketch
 environment for part files, assembly files, and drawing files.  They are located on a 
 separate ribbon panel called "Rectangles" on the "Sketch" ribbon tab. They are as follows:
@@ -52,15 +41,20 @@ Vertical Mid-Point Rectangle:
 	that line's mid-point.  If the user selects existing geometry, then the sketch point
 	is constrained to the existing geometry accordingly.
 
+There is also the ability to configure the user interface for this add-in.  You may use the original
+drop-down control to access the commands or you may switch to a panel style layout.  To configure the
+user interface simply go to the application menu (the big "I" in the upper left corner of Inventor) and
+choose the "Rectangle Tools Settings" command and it will bring up a dialog box with two radio buttons
+which allow you to set the desired user interface for these commands. This will require a restart of 
+Inventor for the change to take effect.
+
 
 SOURCE CODE
 _________________
 
-C# source code will be provided with this add-in as a Visual Studio 2010 Solution when the
-July/August issue of "The Creative Inventor" online magazine has been issued.  To subscribe
-to "The Creative Inventor" online magazine, please go to http://www.teknigroup.com/ and
-click on the magazine icon button in the lower left corner.
+This is an open source project.
 
+Source code was written in C# and is provided at https://github.com/Qube-it/Rectangle-Tools-2010-2012
 
 SUPPORTED VERSIONS
 ______________________
@@ -110,21 +104,34 @@ R2 fixes:
 			   the behavior of the current Inventor rectangle tools where the command stays 
 			   active until the user escapes out of the command or starts a new command.
 
+R3 fixes:
+			1) Added support for a keyboard shortcut to TERMINATE a running rectangle command
+			2) Added the ability for a user to configure the user interface.
+
 
 RELEASE HISTORY
 __________________
 
 R1 						7/4/2010
-R2 (current release)	7/11/2010
+R2 						7/11/2010
+R3 (current release)				8/22/2011
 
 
 FEEDBACK
 ________________
 
-BHall@QubeItDesign.com
+Brian@Qube-it.com
 or post online to  http://www.mcadforums.com/forums/posting.php?mode=edit&f=34&p=78891
 
 ***************************************************************************************
+
+Permission to use, copy, modify, and distribute this software in
+object code form for any purpose and without fee is hereby granted, 
+provided that the above copyright notice appears in all copies and 
+that both that copyright notice and the limited warranty and
+restricted rights notice below appear in all supporting 
+documentation.  This add-in may be freely distributed and installed
+on all properly licensed installations of Autodesk Inventor.
 
 QUBE-IT DESIGN PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS. 
 QUBE-IT DESIGN SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
