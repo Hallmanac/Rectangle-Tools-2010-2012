@@ -33,7 +33,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_29986482FDC8E1CAA83DF79A4D3A9C06"
+        "MsmKey" = "8:_26187F817673F004C205C627D5C24921"
+        "OwnerKey" = "8:_A51D884FBEB54E18A0563574F9E1F05A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2BE68D12D4170D51BC90DFA193015625"
         "OwnerKey" = "8:_A51D884FBEB54E18A0563574F9E1F05A"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -41,12 +47,6 @@
         {
         "MsmKey" = "8:_403F5AB5E892F907113542CC40C88712"
         "OwnerKey" = "8:_1F69C749AD059CDDBEEED84D5B87D50D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_6943E2B37D31568B219D803035B5B0F7"
-        "OwnerKey" = "8:_A51D884FBEB54E18A0563574F9E1F05A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,12 +100,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6943E2B37D31568B219D803035B5B0F7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_1F69C749AD059CDDBEEED84D5B87D50D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -119,6 +113,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_C4EA3BF9EBA4C86A63310D8FFE00D692"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_26187F817673F004C205C627D5C24921"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -292,7 +292,38 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_29986482FDC8E1CAA83DF79A4D3A9C06"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_26187F817673F004C205C627D5C24921"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:StyleConfigDialog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_26187F817673F004C205C627D5C24921"
+                    {
+                    "Name" = "8:StyleConfigDialog.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:StyleConfigDialog.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_9466CA5537E343DDB907F95D9907B141"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2BE68D12D4170D51BC90DFA193015625"
             {
             "SourcePath" = "8:RectangleTools2010.tlb"
             "TargetName" = "8:RectangleTools2010.tlb"
@@ -328,37 +359,6 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:2"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6943E2B37D31568B219D803035B5B0F7"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:StyleConfigDialog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_6943E2B37D31568B219D803035B5B0F7"
-                    {
-                    "Name" = "8:StyleConfigDialog.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:StyleConfigDialog.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_9466CA5537E343DDB907F95D9907B141"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
@@ -533,7 +533,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Rectangle Tools 2010-2011"
         "ProductCode" = "8:{E4C853F8-FFAB-490A-9B6B-AEA37293D090}"
-        "PackageCode" = "8:{E4B8CB40-A058-4974-81BE-0BD94AE7BE51}"
+        "PackageCode" = "8:{20B0FE95-BA8F-426F-8ACD-552DD26EB0B7}"
         "UpgradeCode" = "8:{EF9D56F7-2EFB-4B15-90D4-7159685AF559}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
