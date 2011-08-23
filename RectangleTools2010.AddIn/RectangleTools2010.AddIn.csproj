@@ -101,10 +101,10 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="InventorDocumentProperties">
-      <HintPath>..\..\..\Visual Studio Workspace\InventorDocumentProperties\InventorDocumentProperties\bin\Release\InventorDocumentProperties.dll</HintPath>
+      <HintPath>..\..\..\..\Visual Studio Workspace\InventorDocumentProperties\InventorDocumentProperties\bin\Release\InventorDocumentProperties.dll</HintPath>
     </Reference>
     <Reference Include="InventorEvents2010">
-      <HintPath>..\..\..\Visual Studio Workspace\InventorEventsLibrary\InventorEvents2010\bin\Release\InventorEvents2010.dll</HintPath>
+      <HintPath>..\..\..\..\Visual Studio Workspace\InventorEventsLibrary\InventorEvents2010\bin\Release\InventorEvents2010.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic.Compatibility">
       <EmbedInteropTypes>False</EmbedInteropTypes>

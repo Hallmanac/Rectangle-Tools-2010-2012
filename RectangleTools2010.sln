@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangleTools2010.AddIn", "..\..\Rectangle Tools 2010-2012\RectangleTools2010.AddIn\RectangleTools2010.AddIn.csproj", "{3DC284CE-6572-439D-ADA3-E703FF8498B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangleTools2010.AddIn", "RectangleTools2010.AddIn\RectangleTools2010.AddIn.csproj", "{3DC284CE-6572-439D-ADA3-E703FF8498B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangleTools2010.StyleConfigDialog", "RectangleTools2010.StyleConfigDialog\RectangleTools2010.StyleConfigDialog.csproj", "{1DBE1917-E0C6-4A50-94C1-267D049AE34D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RectangleTools2010.Installer", "RectangleTools2010.Installer\RectangleTools2010.Installer.vdproj", "{AA113CF4-650F-43CA-8F07-1472681AE516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,28 @@ Global
 		{3DC284CE-6572-439D-ADA3-E703FF8498B6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{3DC284CE-6572-439D-ADA3-E703FF8498B6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{3DC284CE-6572-439D-ADA3-E703FF8498B6}.Release|x86.ActiveCfg = Release|Any CPU
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Debug|x86.ActiveCfg = Debug|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Debug|x86.Build.0 = Debug|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Release|Any CPU.ActiveCfg = Release|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Release|x86.ActiveCfg = Release|x86
+		{1DBE1917-E0C6-4A50-94C1-267D049AE34D}.Release|x86.Build.0 = Release|x86
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Debug|Any CPU.ActiveCfg = Debug
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Debug|Any CPU.Build.0 = Debug
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Debug|Mixed Platforms.Build.0 = Debug
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Debug|x86.ActiveCfg = Debug
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Debug|x86.Build.0 = Debug
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Release|Any CPU.ActiveCfg = Release
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Release|Any CPU.Build.0 = Release
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Release|Mixed Platforms.ActiveCfg = Release
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Release|Mixed Platforms.Build.0 = Release
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Release|x86.ActiveCfg = Release
+		{AA113CF4-650F-43CA-8F07-1472681AE516}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
