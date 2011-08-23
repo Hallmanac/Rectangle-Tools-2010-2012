@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QubeItTools.ControlManagers.RectangleControlManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BEAAAACQAABAAAJAAAQAIAABAAkDABIiBAIEAJAgABg=</HashCode>
+      <FileName>ControlManagers\RectangleControlManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QubeItTools.General.AddInInstaller" Collapsed="true">
+    <Position X="9.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAAAAEAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\AddInInstaller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QubeItTools.General.QubeItToolsAddInServer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAAAgAAAABEAABAAAAAQAAAAAABABAAAAAAAAAMEAA=</HashCode>
+      <FileName>General\QubeItToolsAddInServer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QubeItTools.General.QubeItToolsChangeProcessor" Collapsed="true">
+    <Position X="6" Y="12" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAgIAAAAAAIAAACAQABACAAEAAIABCCA=</HashCode>
+      <FileName>General\QubeItToolsChangeProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QubeItTools.Properties.Resources" Collapsed="true">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QubeItTools.Properties.Settings" Collapsed="true">
+    <Position X="9.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QubeItTools.RectangleLogic.CenterPointRectangle" Collapsed="true">
+    <Position X="2.75" Y="11.75" Width="1.75" />
+    <InheritanceLine Type="QubeItTools.RectangleLogic.Rectangle" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="10.562" />
+        <Point X="5.75" Y="12.062" />
+        <Point X="4.5" Y="12.062" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>RectangleLogic\CenterPointRectangle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="QubeItTools.RectangleLogic.DiagonalCenterPointRectangle" Collapsed="true">
+    <Position X="3" Y="12.75" Width="2.5" />
+    <InheritanceLine Type="QubeItTools.RectangleLogic.Rectangle" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="10.562" />
+        <Point X="5.75" Y="13.125" />
+        <Point X="5.5" Y="13.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>RectangleLogic\DiagonalCenterPointRectangle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="QubeItTools.RectangleLogic.HzMidPointRectangle" Collapsed="true">
+    <Position X="5" Y="13.75" Width="1.75" />
+    <InheritanceLine Type="QubeItTools.RectangleLogic.Rectangle" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="10.562" />
+        <Point X="5.75" Y="13.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>RectangleLogic\HzMidPointRectangle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="QubeItTools.RectangleLogic.Rectangle" Collapsed="true">
+    <Position X="5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EChAAgCQEHwFAMtAIAAFIAYD0SBACFIiwAkBhEcAKAQ=</HashCode>
+      <FileName>RectangleLogic\Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QubeItTools.RectangleLogic.VertMidPointRectangle" Collapsed="true">
+    <Position X="2.5" Y="10.75" Width="2" />
+    <InheritanceLine Type="QubeItTools.RectangleLogic.Rectangle" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="10.562" />
+        <Point X="5.75" Y="11.125" />
+        <Point X="4.5" Y="11.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>RectangleLogic\VertMidPointRectangle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="QubeItTools.RectangleView.CenterPointRectangleButton" Collapsed="true">
+    <Position X="3" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RectangleView\CenterPointRectangleButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="QubeItTools.RectangleView.ClientRectangleButton" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAJAAiAACAJAASAAEQAAAAQCEBACABACAAAEAAAAAAg=</HashCode>
+      <FileName>RectangleView\ClientRectangleButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QubeItTools.RectangleView.DiagonalCenterPointRectangleButton" Collapsed="true">
+    <Position X="3.5" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RectangleView\DiagonalCenterPointRectangleButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="QubeItTools.RectangleView.HzMidPointRectangleButton" Collapsed="true">
+    <Position X="5.5" Y="7.5" Width="2.25" />
+    <InheritanceLine Type="QubeItTools.RectangleView.ClientRectangleButton" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="3.812" />
+        <Point X="6.75" Y="7.376" />
+        <Point X="6.75" Y="7.376" />
+        <Point X="6.75" Y="7.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RectangleView\HzMidPointRectangleButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="QubeItTools.RectangleView.VertMidPointRectangleButton" Collapsed="true">
+    <Position X="2" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RectangleView\VertMidPointRectangleButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="QubeItTools.RectangleTools.Properties.Settings" Collapsed="true">
+    <Position X="13.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="QubeItTools.Interfaces.IChangeProcessorParent" Collapsed="true">
+    <Position X="12" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IChangeProcessorParent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QubeItTools.Interfaces.IControlManager" Collapsed="true">
+    <Position X="13.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IControlManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QubeItTools.Interfaces.IInventorButton" Collapsed="true">
+    <Position X="15.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAJAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IInventorButton.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QubeItTools.Interfaces.IRectangleController" Collapsed="true">
+    <Position X="12" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAABAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Interfaces\IRectangleController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QubeItTools.Interfaces.IRectangleLogic" Collapsed="true">
+    <Position X="13.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Interfaces\IRectangleLogic.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
