@@ -1,0 +1,135 @@
+
+********************************
+INVENTOR PRODUCTIVITY TOOLS    
+____________________________
+
+Author:
+	QUBE-IT DESIGN, INC
+	Brian Hall
+	7/4/2010
+********************************
+
+DESCRIPTION
+_______________
+
+R1
+This tool set is three distinct rectangle drawing tools that are used inside
+the sketch environment for part files, assembly files, and drawing files.  They are a 
+Center Point Rectangle, a Horizontal Mid-Point Rectangle, and a Vertical Mid-Point 
+Rectangle. The Horizontal and Vertical mid-point rectangles create a rectangle from
+the mid-points of one of the horizontal or vertical lines of the rectangle. The 
+Center Point Rectangle creates a rectangle about the origin of where the user picks.
+These tools are located on the sketch tab in the ribbon interface as a separate panel
+called "Rectangles". 
+
+==============================
+
+R2(Current)
+This tool set has four distinct rectangle drawing tools that are used inside the sketch
+environment for part files, assembly files, and drawing files.  They are located on a 
+separate ribbon panel called "Rectangles" on the "Sketch" ribbon tab. They are as follows:
+
+Center Point Rectangle (default displayed button):
+	This rectangle tool draws a rectangle about the origin of where the user picks.  It
+	constrains the rectangle by adding a vertical and horizontal alignment constraint to
+	one of the vertical and horizontal lines respectively as well as a coincident constraint
+	to the geometry that the user selects.  If no geometry is selected, then only the vertical
+	and horizontal alignment constraints will be used.
+Diagonal Center Point Rectangle:
+	This rectangle tool draws a rectangle about the origin of where the user picks and adds
+	a diagonal line that goes from one corner to the opposite corner with a sketch point constrained
+	to the mid-point of the diagonal line.  By virtue of the diagonal line, the rectangle relationship 
+	to the origin is maintained, but if the user selects existing geometry then a coincident
+	constraint is added to the origin sketch point and selected geometry.
+Horizontal Mid-Point Rectangle:
+	This rectangle tool draws a rectangle that eminates from the mid-point of one of the 
+	horizontal lines of the rectangle.  A sketch point is then added and constrained to 
+	that line's mid-point.  If the user selects existing geometry, then the sketch point
+	is constrained to the existing geometry accordingly.
+Vertical Mid-Point Rectangle:
+	This rectangle tool draws a rectangle that eminates from the mid-point of one of the 
+	vertical lines of the rectangle.  A sketch point is then added and constrained to 
+	that line's mid-point.  If the user selects existing geometry, then the sketch point
+	is constrained to the existing geometry accordingly.
+
+
+SOURCE CODE
+_________________
+
+C# source code will be provided with this add-in as a Visual Studio 2010 Solution when the
+July/August issue of "The Creative Inventor" online magazine has been issued.  To subscribe
+to "The Creative Inventor" online magazine, please go to http://www.teknigroup.com/ and
+click on the magazine icon button in the lower left corner.
+
+
+SUPPORTED VERSIONS
+______________________
+
+This add-in supports Inventor 2010 forward and does not support the classic
+interface. 
+
+
+INSTALLATION
+________________ 
+
+An installer wizard ("Qube-It Tools.msi") has been provided. Since this add-in was
+built using .NET 3.5 framework, you will need that framework to run the add-in.  The
+installer will automatically detect this and install it if you don't have it. Follow 
+the prompts for quick installation.  You can change the location of the install folder 
+if you like.
+
+You may uninstall the add-in through your system's control panel. You may also simply
+uncheck the "Load on Startup" box if you're only looking to unload it without uninstalling it.
+
+
+KNOWN ISSUES
+_________________
+
+This add-in does not support the classic interface by design. 
+
+The default rectangle button shown on the Rectangles tab is the Center point Rectangle.
+When the user selects one of the other rectangle tools, they will remain displayed
+and "pressed" during the life of the tool, but when the user exits the tool or starts another
+tool, the displayed button will go back to being the Center Point Rectangle tool again.  
+This is intentional because even if the other tools are displayed (i.e. horizontal or 
+vertical mid-point rectangle tools) and the user clicks that displayed button, the center point rectangle tool 
+will be what gets activated (unless the user selects the drop down first). 
+
+There is no support for the heads up display to be utilized with these tools. It is not 
+supported through the API yet.
+
+
+BUG FIXES
+__________________
+R2 fixes:
+			1) Added support for the construction line toggle.
+			2) Added the Diagonal Center Point Rectangle tool to provide for a more robust
+			   rectangle so that there are no unexpected results when the corners are filleted 
+			   or chamfered.
+			3) Changed the behavior of the tool so that it acts in a manner that is consistent with 
+			   the behavior of the current Inventor rectangle tools where the command stays 
+			   active until the user escapes out of the command or starts a new command.
+
+
+RELEASE HISTORY
+__________________
+
+R1 						7/4/2010
+R2 (current release)	7/11/2010
+
+
+FEEDBACK
+________________
+
+BHall@QubeItDesign.com
+or post online to  http://www.mcadforums.com/forums/posting.php?mode=edit&f=34&p=78891
+
+***************************************************************************************
+
+QUBE-IT DESIGN PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS. 
+QUBE-IT DESIGN SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  QUBE-IT DESIGN, INC. 
+DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+UNINTERRUPTED OR ERROR FREE.
+
+
